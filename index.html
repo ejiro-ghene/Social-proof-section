@@ -4,58 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+      rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    10,000+ of our users love our products.
+  <body class="hscreen pt-14 px-3 lg:px-24">
+    <main class="social-dashboard w-full">
+      <section class="header">
+        <div class="social-text">
+          <h1 class="text-header text-5xl font-semibold text-center lg:text-left">10,000+ of our users love our products.
+          </h1>
+        <p class="mt-6 text-center lg:text-left">We only provide great products combined with excellent customer service.
+          See what our satisfied customers are <!-- </br> -->  saying about our services.
+        </p>
+        </div>
+            
+          <!-- static rates -->
+          <div class="star-container"> 
+            <div class="star-rates1 mt-12 md:w-11/12 md:m-auto md:my-5 md:p-2 lg:py-1 lg:mt-10 lg:wfull">
+              <div class="lg:w- lg:h-6 flex justify-center lg:ml1 space-x-2">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+              </div>
+              
+              <span class="star-span flex justify-center lg:-ml24">Rated 5 Stars in Reviews</span>
+            </div>
+ 
+            <div class="star-rates2 mt-8 md:w-11/12 md:m-auto md:my-5 md:p-2 lg:py-1 lg:mt-8 lg:wfull">
+              <div class="lg:w5 lg:h-6 flex justify-center lg:ml8 space-x-2">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+              </div>
+              
+              <span class="star-span flex justify-center lg:-ml16">Rated 5 Stars in Report Guru</span>
+            </div>
+ 
+              <div class="star-rates3 mt-8 md:w-11/12 md:m-auto md:my-5 md:p-2 lg:py-1 lg:mt-8 lg:wfull">
+                <div class="lg:w5 lg:h-6 flex justify-center lg:ml16 space-x-2">
+                  <img src="./images/icon-star.svg" alt="">
+                  <img src="./images/icon-star.svg" alt="">
+                  <img src="./images/icon-star.svg" alt="">
+                  <img src="./images/icon-star.svg" alt="">
+                  <img src="./images/icon-star.svg" alt="">
+                </div>
+                
+                <span class="star-span flex justify-center lg:-ml8">Rated 5 Stars in BestTech</span>
+              </div>
+          </div>
+      </section>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+
+  <!-- card-section -->
+      <section class="mt-12 md:w-11/12 md:m-auto lg:w-full lg:grid lg:grid-cols-3 lg:gap-6 lg:mt-6">
+        <!-- card-1 -->
+        <div class="card-one px-6 rounded-lg">
+          <div class="flex pt-5 mb-6">
+             <img class="rounded-full w-14" src="./images/image-colton.jpg" alt="">
+            <div class="px-8">
+              <h1 class="text-white font-semibold">Colton Smith </h1>
+              <span class="card-span font-extralight">Verified Buyer</span>
+            </div>
+          </div>
+          
+          <p class="text-white text-sm text-left">"We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
+        </div>
+        <!-- card-2 -->
+        <div class="card-two px-6 rounded-lg mt-4 lg:mt-7">
+          <div class="flex pt-5 mb-6">
+            <img class="rounded-full w-14" src="./images/image-irene.jpg" alt="">
+            <div class="px-8">
+              <h1 class="text-white font-semibold">Irene Roberts </h1>
+              <span class="card-span font-extralight">Verified Buyer</span>
+            </div>
+          </div>
+          
+          <p class="text-white text-sm text-left">"Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div>
+        <!-- card-3 -->
+        <div class="card-three px-6 rounded-lg mt-4 lg:mt-14">
+          <div class="flex pt-5 mb-6">
+            <img class="rounded-full w-14" src="./images/image-anne.jpg" alt="">
+            <div class="px-8">
+              <h1 class="text-white font-semibold">Anne Wallace</h1>
+              <span class="card-span font-extralight">Verified Buyer</span>
+            </div>
+            </div>
+          
+          <p class="text-white text-sm text-left">"Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="attribution mt-12 lg:mt-6">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ukiwe Stephanie</a>.
+      </div>
+    </footer>
   </body>
 </html>
